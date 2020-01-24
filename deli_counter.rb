@@ -6,7 +6,7 @@ def line(katz_deli)
   end
   string_result = "The line is currently:"
   katz_deli.each_with_index{ |customer, position|
-    string_result += "#{position + 1}. #{customer}"
+    string_result += " #{position + 1}. #{customer}"
   }
   puts string_result
 end
