@@ -4,10 +4,11 @@ def line(katz_deli)
     puts "The line is currently empty."
     return
   end
-  string_result = ""
-  katz_deli.each{ |customer|
-    puts
+  string_result = "The line is currently: "
+  katz_deli.each_with_index{ |customer, position|
+    string_result += "#{position + 1}. #{customer}"
   }
+  puts string_result
 end
 
 def take_a_number(katz_deli, name)
