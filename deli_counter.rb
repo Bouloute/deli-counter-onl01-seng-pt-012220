@@ -2,7 +2,7 @@
 def line(katz_deli)
   if (katz_deli.size == 0) 
     puts "The line is currently empty."
-    return
+    return#Should I be doing this? Probably not 
   end
   string_result = "The line is currently:"
   katz_deli.each_with_index{ |customer, position|
